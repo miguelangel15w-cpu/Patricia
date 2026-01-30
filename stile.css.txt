@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #ff5f9e, #ff8fb1);
+    color: white;
+    text-align: center;
+}
+
+/* 🔐 Login */
+#login {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login h2 {
+    margin-bottom: 15px;
+}
+
+#login input {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    width: 220px;
+    text-align: center;
+}
+
+#login button {
+    margin-top: 10px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    background: white;
+    color: #ff5f9e;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Contenido oculto */
+.oculto {
+    display: none;
+}
+
+header {
+    padding: 50px 20px;
+}
+
+section {
+    padding: 30px 15px;
+}
+
+/* 📸 Galería */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 180px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* 🎥 Videos */
+.videos video {
+    width: 280px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .galeria img {
+        width: 150px;
+    }
+
+    .videos video {
+        width: 95%;
+    }
+}
+
+/* 💖 Corazones */
+.corazon {
+    position: fixed;
+    top: -10px;
+    font-size: 20px;
+    animation: caer 5s linear infinite;
+}
+
+@keyframes caer {
+    to {
+        transform: translateY(110vh);
+        opacity: 0;
+    }
+}

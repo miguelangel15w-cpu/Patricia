@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Para Patricia 💖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+    <h2>💖 Solo para Patricia 💖</h2>
+    <input type="password" id="password" placeholder="Contraseña">
+    <button onclick="verificar()">Entrar</button>
+</div>
+
+<div id="contenido" class="oculto">
+
+    <audio id="musica" loop>
+        <source src="musica/amor.mp3" type="audio/mp3">
+    </audio>
+
+    <header>
+        <h1>Patricia 💕</h1>
+        <p>25/02 – El día que cambió todo 💞</p>
+        <p id="frase"></p>
+    </header>
+
+    <section>
+        <h2>Nuestros recuerdos 📸</h2>
+        <div class="galeria">
+            <img src="fotos/foto1.jpg">
+            <img src="fotos/foto2.jpg">
+            <img src="fotos/foto3.jpg">
+        </div>
+    </section>
+
+    <section>
+        <h2>Momentos especiales 🎥</h2>
+        <div class="videos">
+            <video controls src="videos/video1.mp4"></video>
+        </div>
+    </section>
+
+    <footer>
+        <p>Te amo hoy, mañana y siempre ❤️</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

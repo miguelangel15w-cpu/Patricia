@@ -1,0 +1,41 @@
+// 🔐 CONTRASEÑA
+function verificar() {
+    const pass = document.getElementById("password").value;
+
+    if (pass === "patricia25") {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("contenido").style.display = "block";
+        document.getElementById("musica").play();
+    } else {
+        alert("Contraseña incorrecta 💔");
+    }
+}
+
+// 💬 FRASES QUE CAMBIAN
+const frases = [
+    "Patricia, eres mi casualidad más bonita 💖",
+    "Desde el 25/02 mi mundo es mejor contigo 💕",
+    "Tu sonrisa es mi lugar favorito ❤️",
+    "Te elegiría mil veces 💞"
+];
+
+let i = 0;
+setInterval(() => {
+    document.getElementById("frase").innerText = frases[i];
+    i = (i + 1) % frases.length;
+}, 3000);
+
+// 💖 CORAZONES
+setInterval(() => {
+    const corazon = document.createElement("div");
+    corazon.className = "corazon";
+    corazon.innerHTML = "💖";
+    corazon.style.left = Math.random() * 100 + "vw";
+    corazon.style.fontSize = Math.random() * 20 + 10 + "px";
+
+    document.body.appendChild(corazon);
+
+    setTimeout(() => {
+        corazon.remove();
+    }, 5000);
+}, 400);
